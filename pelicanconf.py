@@ -5,7 +5,7 @@ AUTHOR = u"Jonathan Marvens Barronville"
 SITENAME = u"jonathanmarvens.com"
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
