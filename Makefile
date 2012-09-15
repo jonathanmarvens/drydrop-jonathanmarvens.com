@@ -2,8 +2,10 @@ PELICAN=pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
-INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
+# INPUTDIR=$(BASEDIR)/content
+INPUTDIR=$(BASEDIR)/source
+# OUTPUTDIR=$(BASEDIR)/output
+OUTPUTDIR=$(BASEDIR)/application
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
