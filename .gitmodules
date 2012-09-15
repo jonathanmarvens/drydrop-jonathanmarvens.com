@@ -1,3 +1,6 @@
 [submodule "dryapp/firepython"]
 	path = dryapp/firepython
 	url = git://github.com/darwin/firepython.git
+[submodule "application"]
+	path = application
+	url = git://github.com/jonathanmarvens/jonathanmarvens.com.git
