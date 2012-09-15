@@ -1,4 +1,4 @@
-find directory -type f | xargs dos2unix
+find . -type f | xargs dos2unix
 git add .
 git diff --diff-filter=D --name-only -z | xargs -0 git rm
 git commit
