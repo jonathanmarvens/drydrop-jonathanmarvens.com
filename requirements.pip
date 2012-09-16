@@ -8,4 +8,7 @@ docutils==0.9.1
 feedgenerator==1.2.1
 -e git://github.com/getpelican/pelican@b8279e1c9c4c86142f5674caaac0b7701c06a8d1#egg=pelican-dev
 pytz==2012d
+smartypants==1.6.0.3
+typogrify==2.0.0
+webassets==0.7.1
 wsgiref==0.1.2
