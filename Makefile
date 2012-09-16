@@ -52,6 +52,8 @@ regenerate: clean
 serve:
 	cd $(OUTPUTDIR) && python -m SimpleHTTPServer
 
+html_and_serve: html serve
+
 devserver:
 	$(BASEDIR)/develop_server.sh restart
 
