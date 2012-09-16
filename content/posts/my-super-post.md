@@ -3,4 +3,4 @@ title: My super title
 tags: super, awesome
 slug: my-super-post
 
-This is the content of my super blog post.
+This is the content of my super post.
