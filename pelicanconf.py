@@ -2,29 +2,29 @@
 
 # Basic settings
 ARTICLE_DIR					= 'posts'
-ARTICLE_EXCLUDES			= ('pages')
-AUTHOR						= u'Jonathan Marvens Barronville'
+ARTICLE_EXCLUDES			= ('pages', 'public')
+AUTHOR						= u'jonathanmarvens'
 DATE_FORMATS				= {}
 DEFAULT_CATEGORY			= 'uncategorized'
 DEFAULT_DATE				= 'fs'
-DEFAULT_DATE_FORMAT			= '%a %d %B %Y'
+DEFAULT_DATE_FORMAT			= '%a., %B %d, %Y'
 DELETE_OUTPUT_DIRECTORY		= False
 DIRECT_TEMPLATES			= ('index', 'tags', 'categories', 'archives')
 DISPLAY_PAGES_ON_MENU 		= False
 JINJA_EXTENSIONS			= []
-LESS_GENERATOR				= True
+LESS_GENERATOR				= False
 LOCALE						= ''
 MARKUP						= ('md', 'rst')
 MD_EXTENSIONS				= ['codehilite', 'extra']
-OUTPUT_PATH					= 'application/'
+OUTPUT_PATH					= 'application'
 PAGE_DIR					= 'pages'
-PAGE_EXCLUDES				= ('posts')
+PAGE_EXCLUDES				= ('posts', 'public')
 PAGINATED_DIRECT_TEMPLATES	= ('index', 'archives')
 PATH						= None
 PDF_GENERATOR				= False
 PLUGINS						= []
 RELATIVE_URLS				= True
-SITENAME					= u'jonathanmarvens.com | Home of Jonathan Barronville'
+SITENAME					= u'jonathanmarvens.com'
 SITEURL						= 'http://www.jonathanmarvens.com'
 STATIC_PATHS				= ['public']
 SUMMARY_MAX_LENGTH			= 25
@@ -50,10 +50,10 @@ TAG_URL					= 'tags/{name}/'
 # Feed settings
 CATEGORY_FEED_ATOM	= 'feeds/category.%s.atom.xml'
 CATEGORY_FEED_RSS	= 'feeds/category.%s.rss'
-FEED_ATOM			= 'feeds/all-en.atom.xml'
+FEED_ATOM			= 'feeds/all.en.atom.xml'
 FEED_DOMAIN			= SITEURL
 FEED_MAX_ITEMS		= 25
-FEED_RSS			= 'feeds/all-en.rss'
+FEED_RSS			= 'feeds/all.en.rss'
 TAG_FEED_ATOM		= 'feeds/tag.%s.atom.xml'
 TAG_FEED_RSS		= 'feeds/tag.%s.rss'
 
@@ -67,7 +67,7 @@ TAG_CLOUD_MAX_ITEMS	= 25
 
 # Translation settings
 DEFAULT_LANG		= 'en'
-TRANSLATION_FEED	= 'feeds/all-%s.atom.xml'
+TRANSLATION_FEED	= 'feeds/all.%s.atom.xml'
 
 # Content ordering settings
 NEWEST_FIRST_ARCHIVES	= True
@@ -75,7 +75,7 @@ REVERSE_CATEGORY_ORDER	= False
 
 # Theme settings
 CSS_FILE			= 'main.css'
-THEME				= 'simple'
+THEME				= 'notmyidea'
 THEME_STATIC_PATHS	= ['static']
 WEBASSETS			= True
 
