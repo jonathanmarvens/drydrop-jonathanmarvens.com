@@ -90,7 +90,7 @@ REVERSE_CATEGORY_ORDER	= False
 
 # Theme settings
 CSS_FILE			= 'main.css'
-THEME				= 'simple'
+THEME				= 'notmyidea'
 THEME_STATIC_PATHS	= ['static']
 WEBASSETS			= True
 
