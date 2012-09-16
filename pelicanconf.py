@@ -75,7 +75,7 @@ REVERSE_CATEGORY_ORDER	= False
 
 # Theme settings
 CSS_FILE			= 'main.css'
-THEME				= 'notmyidea'
+THEME				= 'simple'
 THEME_STATIC_PATHS	= ['static']
 WEBASSETS			= True
 
