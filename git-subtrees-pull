@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 git subtree pull -P application git@github.com:jonathanmarvens/jonathanmarvens.com.git master
-git subtree pull -P application/static/public/resources/twitter/bootstrap git@github.com:jonathanmarvens/twitter-bootstrap.git master
+git subtree pull -P content/public/resources/twitter/bootstrap git@github.com:jonathanmarvens/twitter-bootstrap.git master
