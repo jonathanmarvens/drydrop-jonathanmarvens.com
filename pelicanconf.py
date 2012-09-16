@@ -32,20 +32,35 @@ TIMEZONE					= 'America/New_York'
 TYPOGRIFY					= True
 
 # URL settings
-ARTICLE_LANG_SAVE_AS	= ARTICLE_LANG_URL = 'posts/{lang}/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+## ARTICLE_LANG_SAVE_AS	= 'posts/{lang}/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 ## ARTICLE_LANG_URL		= 'posts/{lang}/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS			= ARTICLE_URL = 'posts/en/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
-## ARTICLE_URL				= 'posts/en/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-AUTHOR_SAVE_AS			= AUTHOR_URL = 'authors/{name}/index.html'
-## AUTHOR_URL				= 'authors/{name}/'
-CATEGORY_SAVE_AS		= CATEGORY_URL = 'categories/{name}/index.html'
+## ARTICLE_SAVE_AS		= 'posts/en/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+## ARTICLE_URL			= 'posts/en/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+## AUTHOR_SAVE_AS		= 'authors/{name}/index.html'
+## AUTHOR_URL			= 'authors/{name}/'
+## CATEGORY_SAVE_AS		= 'categories/{name}/index.html'
 ## CATEGORY_URL			= 'categories/{name}/'
-PAGE_LANG_SAVE_AS		= PAGE_LANG_URL = 'pages/{lang}/{slug}/index.html'
-## PAGE_LANG_URL			= 'pages/{lang}/{slug}/'
-PAGE_SAVE_AS			= PAGE_URL = 'pages/en/{slug}/index.html'
+## PAGE_LANG_SAVE_AS	= 'pages/{lang}/{slug}/index.html'
+## PAGE_LANG_URL		= 'pages/{lang}/{slug}/'
+## PAGE_SAVE_AS			= 'pages/en/{slug}/index.html'
 ## PAGE_URL				= 'pages/en/{slug}/'
-TAG_SAVE_AS				= TAG_URL = 'tags/{name}/index.html'
-## TAG_URL					= 'tags/{name}/'
+## TAG_SAVE_AS			= 'tags/{name}/index.html'
+## TAG_URL				= 'tags/{name}/'
+### ---------- ### ---------- ### ---------- ### ---------- ###
+ARTICLE_LANG_SAVE_AS	= 'posts/{lang}/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+ARTICLE_LANG_URL		= ARTICLE_LANG_SAVE_AS
+ARTICLE_SAVE_AS			= 'posts/en/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+ARTICLE_URL				= ARTICLE_SAVE_AS
+AUTHOR_SAVE_AS			= 'authors/{name}.html'
+AUTHOR_URL				= AUTHOR_SAVE_AS
+CATEGORY_SAVE_AS		= 'categories/{name}.html'
+CATEGORY_URL			= CATEGORY_SAVE_AS
+PAGE_LANG_SAVE_AS		= 'pages/{lang}/{slug}.html'
+PAGE_LANG_URL			= PAGE_LANG_SAVE_AS
+PAGE_SAVE_AS			= 'pages/en/{slug}.html'
+PAGE_URL				= PAGE_SAVE_AS
+TAG_SAVE_AS				= 'tags/{name}.html'
+TAG_URL					= TAG_SAVE_AS
 
 # Feed settings
 CATEGORY_FEED_ATOM	= 'feeds/category.%s.atom.xml'
