@@ -5,14 +5,14 @@ import sys
 sys.path.append('.')
 from pelicanconf import *
 
-SITEURL = 'http://jonathanmarvens.com'
+# SITEURL = 'http://jonathanmarvens.com'
 
-DELETE_OUTPUT_DIRECTORY = True
+# DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
+# # Following items are often useful when publishing
 
-# Uncomment following line for absolute URLs in production:
-#RELATIVE_URLS = False
+# # Uncomment following line for absolute URLs in production:
+# #RELATIVE_URLS = False
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+# #DISQUS_SITENAME = ""
+# #GOOGLE_ANALYTICS = ""
