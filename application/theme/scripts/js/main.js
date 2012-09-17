@@ -23,6 +23,7 @@ displayLatestGitHubCommits = function() {
     },
     'commit_count': 5,
     'debug': 0,
+    'exclude_repos': ['twitter-bootstrap'],
     'repo_count': 3,
     'user': 'jonathanmarvens'
   }).run();
