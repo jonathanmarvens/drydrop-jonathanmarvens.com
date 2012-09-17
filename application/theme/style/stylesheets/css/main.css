@@ -1,3 +1,10 @@
+* {
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-ms-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
 a {
 	text-decoration: none;
 }
@@ -23,5 +30,10 @@ hr.above-and-below-navigation-links {
 }
 
 .boldify {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 20px;
 	font-weight: bold;
 }

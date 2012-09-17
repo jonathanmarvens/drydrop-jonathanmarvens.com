@@ -10,12 +10,23 @@ displayLatestGitHubCommits = ->
 					'<dd>' +
 						'<small>'
 				$.each value.commits, (commit_key, commit_value) ->
+					# Same as moment(new Date(Date.parse(commit_value['commit']['committer']['date'])))
+					commit_date = moment(Date.parse(commit_value['commit']['committer']['date']))
+					commit_date = commit_date.fromNow()
+
 					html_data +=
-							'<code>&#64;' + commit_value['committer']['login'] + '</code> ' +
+							'<br>' +
+							'<a href="https://github.com/' + commit_value['committer']['login'] + '">' +
+								'<code>&#64;' + commit_value['committer']['login'] + '</code>' +
+							'</a> ' +
 							'<i class="icon-arrow-right"></i> ' +
-							'<code>' + commit_value['sha'].slice(0, 10) + '</code> ' +
+							'<a href="' + value.repo['html_url'] + '/commit/' + commit_value['sha'] + '">' +
+								'<code>' + commit_value['sha'].slice(0, 10) + '</code>' +
+							'</a> ' +
 							'<span class="boldify">with</span> ' +
 							'<code>' + commit_value['commit']['message'] + '</code> ' +
+							'<br>' +
+							'<small>' + commit_date + '</small>' +
 							'<br>'
 				html_data +=
 					'</small>'
@@ -33,9 +44,9 @@ displayLatestGitHubCommits = ->
 			return
 		'commit_count': 5
 		'debug': 0
-		'exclude_repos': [
-			'twitter-bootstrap'
-		]
+		#'exclude_repos': [
+			#'twitter-bootstrap'
+		#]
 		'repo_count': 3
 		'user': 'jonathanmarvens'
 	.run()
