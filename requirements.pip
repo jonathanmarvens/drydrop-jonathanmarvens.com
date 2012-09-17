@@ -1,5 +1,6 @@
 Jinja2==2.6
 Markdown==2.2.0
+MarkupSafe==0.15
 Pygments==1.5
 Unidecode==0.04.9
 blinker==1.2

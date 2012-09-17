@@ -1,0 +1,27 @@
+a {
+	text-decoration: none;
+}
+
+.zerofy-span-height {
+	min-height: 1px !important;
+	height: 1px !important;
+}
+
+hr.above-and-below-navigation-links {
+	min-height: 1px !important;
+	margin: 0;
+}
+.navigation-links {
+	text-align: center;
+}
+.navigation-links a {
+	margin: 3px !important;
+	padding: 4px;
+	background-color: #eee;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.boldify {
+	font-weight: bold;
+}

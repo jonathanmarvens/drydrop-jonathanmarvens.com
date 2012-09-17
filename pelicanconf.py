@@ -90,7 +90,7 @@ REVERSE_CATEGORY_ORDER	= False
 
 # Theme settings
 CSS_FILE			= 'main.css'
-THEME				= 'notmyidea'
+THEME				= 'jonathanmarvens-custom-1'
 THEME_STATIC_PATHS	= ['static']
 WEBASSETS			= True
 
@@ -105,7 +105,24 @@ WEBASSETS			= True
 ## PIWIK_SSL_URL
 ## PIWIK_URL
 ## SOCIAL
-TWITTER_USERNAME = 'jonathanmarvens'
+TWITTER_USERNAME	= 'jonathanmarvens'
 
 # Miscellaneous settings
-FILES_TO_COPY = ()
+FILES_TO_COPY	= ()
+
+# Personal settings
+EXTRA_SITE_AUTHOR			= u'Jonathan Marvens Barronville'
+EXTRA_SITE_DESCRIPTION	= (
+	u'This is the online home of %(author)s. Feel free to navigate around. Make yourself at home.' % {
+		'author': EXTRA_SITE_AUTHOR
+	}
+)
+
+def custom_filter_datetime_format (date_and_time, date_format):
+	from datetime import datetime
+
+	return datetime.strptime(date_and_time, '%Y-%m-%d %H:%M:%S').strftime(date_format)
+
+JINJA_FILTERS = {
+	'format_date_and_time': custom_filter_datetime_format,
+}
