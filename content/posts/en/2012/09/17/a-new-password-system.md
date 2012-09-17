@@ -4,7 +4,7 @@ tags: security, intelligence
 slug: a-new-password-system
 category: technology
 
-Ever since I've been using [computers][], it has all been a wonder for me. I use computers, with the help of the amazing "[internet][]", to check my emails, watch videos, stream music, read books, etc. I've always been [happy][] with the way things normally just work.
+Ever since I've been using [computers][], it has all been a wonder for me. I use computers, with the help of the amazing "[internet][]" [;)], to check my emails, watch videos, stream music, read books, etc. I've always been [happy][] with the way things normally just work.
 
 Dedicated programmers/developers all over the world have taken their time to develop the sophisticated systems we use today. Today, when you buy a copy of Microsoft Office, for example, dedicated Microsoft Office developers from a Microsoft team have taken their time to make sure that when anyone pops open the software, it just works. The same goes for Apple or any other company. Now, these things are good and it is great that we have systems that can do all our work for us, but with that comes a big issue.
 
@@ -27,15 +27,15 @@ The question is, what will happen to all this data when our own computers and ro
 
 Let's get to the subject of this article: passwords. I believe that probably `~ 80%-90%` of time spent on a computer by the average person, nowadays, is spent browsing the web. Probably `~ 75%-85%` of websites require a login of some kind. This login usually includes a username and a password.
 
-Most of us, some point in our lives, have been given this one, great, piece of advice about passwords: *"Don't use the same password on different websites."*.
+Most of us, at some point in our lives, have been given this one, great, piece of advice about passwords: *"Don't use the same password on different websites."*.
 
-This might be very easy to say, but it is very hard to accomplish. We are humans (for the most part...[:)]). Our brains have limits on how much can be stored and remembered.
+This might be very easy to say, but it is very hard to accomplish. We are humans (for the most part...[:)]). Our brains has limits on how much can be stored and remembered.
 
-For example, if an average person were to use about 25 websites on average, how do you expect that person to memorize 25 different passwords. Quite simply, I don't think that is possible.
+For example, if an average person were to use about 25 websites on average, how do you expect that person to memorize 25 different passwords. Quite simply, I don't think that's possible.
 
 I would like to take myself as an example. As a programmer with a very good amount of knowledge in security, I have always known not to use the same password on different websites and services. However, simply knowing that never did me any good. I tried it, but I had to reset my passwords so much on the websites and services that I just gave up. I just couldn't do it.
 
-I now have a solution! For the past couple months or so, I've been hanging out a lot with this cool guy, [Michael Bourque][]. Due to some things we've been doing, I've been able to see a couple of his passwords. Well, he would have passwords that, to me, looked like complete giberish, yet he never have a problem remembering them. After questioning Michael about this a couple of times, one day, he gave me his ***secret***: he created his own *password system*.
+I now have a solution! For the past couple months or so, I've been hanging out a lot with this cool guy, [Michael Bourque][]. Due to some things we've been doing, I've been able to see a couple of his passwords. Well, he would have passwords that, to me, looked like complete giberish, yet he never have a problem remembering them. After questioning Michael about this a couple of times, one day, he gave me his **secret**: he created his own *password system*.
 
 The password system works like this:
 
@@ -67,7 +67,7 @@ The password system works like this:
 6. Construct a pattern for resetted passwords.
 	- I could give an example, but I'm going to leave that to you to figure out. [:)]
 
-I've now been able to construct my own similar system and have been using that since without **any** issues.
+I've now been able to construct my own, similar, system and have been using that since without **any** issues.
 
 So I encourage you, stop registering passwords as `iluvmymomma1` and consider using a system like this for you privacy, safety, and security.
 
