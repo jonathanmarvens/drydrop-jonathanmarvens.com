@@ -95,7 +95,7 @@ THEME_STATIC_PATHS	= ['static']
 WEBASSETS			= True
 
 # Theme development settings
-## DISQUS_SITENAME
+DISQUS_SITENAME		= 'jonathanmarvens-com'
 ## GITHUB_URL
 ## GOOGLE_ANALYTICS
 ## GOSQUARED_SITENAME
