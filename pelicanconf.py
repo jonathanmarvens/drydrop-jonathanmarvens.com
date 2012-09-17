@@ -2,14 +2,14 @@
 
 # Basic settings
 ARTICLE_DIR					= 'posts'
-ARTICLE_EXCLUDES			= ('pages', 'public')
+ARTICLE_EXCLUDES			= ('pages', 'static/public')
 AUTHOR						= u'jonathanmarvens'
 DATE_FORMATS				= {}
 DEFAULT_CATEGORY			= 'uncategorized'
 DEFAULT_DATE				= 'fs'
 DEFAULT_DATE_FORMAT			= '%a., %B %d, %Y'
 DELETE_OUTPUT_DIRECTORY		= False
-DIRECT_TEMPLATES			= ('index', 'tags', 'categories', 'archives')
+DIRECT_TEMPLATES			= ('index', 'tags', 'categories', 'archives', '404')
 DISPLAY_PAGES_ON_MENU 		= False
 JINJA_EXTENSIONS			= []
 LESS_GENERATOR				= False
@@ -18,7 +18,7 @@ MARKUP						= ('md', 'rst')
 MD_EXTENSIONS				= ['codehilite', 'extra']
 OUTPUT_PATH					= 'application'
 PAGE_DIR					= 'pages'
-PAGE_EXCLUDES				= ('posts', 'public')
+PAGE_EXCLUDES				= ('posts', 'static/public')
 PAGINATED_DIRECT_TEMPLATES	= ('index', 'archives')
 PATH						= None
 PDF_GENERATOR				= False
