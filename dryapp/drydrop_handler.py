@@ -67,7 +67,6 @@ def routing(m):
 	m.connect('/drydrop-static/*path', controller="static", action="static")
 	m.connect('/admin/:action', controller="admin", action="index")
 	m.connect('/hook/:action', controller="hook", action="index")
-	m.connect('/proxy/:action', controller="proxy", action="index")
 	m.connect('/', controller="welcome", action="index")
 
 	# returns the mapper object. Do not remove.
