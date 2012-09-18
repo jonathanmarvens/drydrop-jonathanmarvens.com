@@ -56,4 +56,6 @@ displayLatestGitHubCommits = ->
 $(document).ready ->
 	displayLatestGitHubCommits();
 
+	$('.lf_logo moderator').remove();
+
 	return

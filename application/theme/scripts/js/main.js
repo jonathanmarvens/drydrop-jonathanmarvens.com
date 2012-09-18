@@ -33,4 +33,5 @@ displayLatestGitHubCommits = function() {
 
 $(document).ready(function() {
   displayLatestGitHubCommits();
+  $('.lf_logo moderator').remove();
 });
