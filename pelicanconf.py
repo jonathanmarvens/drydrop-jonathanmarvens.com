@@ -95,7 +95,7 @@ THEME_STATIC_PATHS	= ['static']
 WEBASSETS			= True
 
 # Theme development settings
-DISQUS_SITENAME		= 'jonathanmarvens-com'
+## DISQUS_SITENAME		= 'jonathanmarvens-com'
 ## GITHUB_URL
 ## GOOGLE_ANALYTICS
 ## GOSQUARED_SITENAME
@@ -106,6 +106,7 @@ DISQUS_SITENAME		= 'jonathanmarvens-com'
 ## PIWIK_URL
 ## SOCIAL
 TWITTER_USERNAME	= 'jonathanmarvens'
+LIVEFYRE_SITE_ID	= 312164
 
 # Miscellaneous settings
 FILES_TO_COPY	= ()
