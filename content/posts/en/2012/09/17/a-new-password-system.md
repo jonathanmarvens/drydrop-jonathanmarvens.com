@@ -23,7 +23,7 @@ Long story, short, **WE'RE BEGINNING TO DEPEND TOO MUCH** and **STORING TOO MUCH
 
 The question is, what will happen to all this data when our own computers and robots take over the world? How will we protect ourselves if even our precious and important data, like our passwords, for example, we have to retrieve from them?
 
-![Terminator](/public/a-new-password-system-terminator.jpg)
+![Terminator](/static/public/a-new-password-system-terminator.jpg)
 
 Let's get to the subject of this article: passwords. I believe that probably `~ 80%-90%` of time spent on a computer by the average person, nowadays, is spent browsing the web. Probably `~ 75%-85%` of websites require a login of some kind. This login usually includes a username and a password.
 
