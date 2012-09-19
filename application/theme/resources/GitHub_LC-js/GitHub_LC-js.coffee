@@ -1,3 +1,6 @@
+###*
+
+###
 class $_GitHub_LC
 	constructor: (@setup_options) ->
 		@errors				= false
@@ -38,7 +41,7 @@ class $_GitHub_LC
 
 		return @user_github_repos_and_commits
 	run: ->
-		if @errors is not true
+		if @errors is false
 			user_github_repos = []
 
 			github_api_users_user_repos_url = 'https://api.github.com/users/' + @setup_options['user'] + '/repos'
