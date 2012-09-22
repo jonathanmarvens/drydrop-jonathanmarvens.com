@@ -17,7 +17,7 @@ Allow me to clarify how much data that is.
 
 	295 exabytes	~= 295,000,000 terabytes ~= 295,000,000,000 gigabytes
 
-The average laptop, nowadays, is shipped with a storage capacity of `250 GB` - `500 GB`. Let's make believe that every computer running in the world had `320 GB` of storage capacity. Based on this study, it would mean that `~ 921,875,000` (`295000000000 / 320 ~= 921875000`) people in this world are saving `~ 320 GB` of data, each, on these systems.
+The average laptop, nowadays, is shipped with a storage capacity of `250 GB` - `500 GB`. Let's make believe that every computer running in the world had `320 GB` of storage capacity. Based on this study, it would mean that `~ 921,875,000` (`295000000000 / 320 = 921875000`) people in this world are saving `~ 320 GB` of data, each, on these systems.
 
 Long story, short, **WE'RE BEGINNING TO DEPEND TOO MUCH** and **STORING TOO MUCH DATA** on these systems! And don't forget that the real danger is that these systems are [getting smarter][] everyday now with [artificial intelligience][].
 
