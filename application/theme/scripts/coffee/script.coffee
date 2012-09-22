@@ -1,7 +1,7 @@
 displayLatestGitHubCommits = ->
 	github_commits = new $_GitHub_LC
 		'callback': (data) ->
-			if data is not false
+			if data isnt false
 				$('span.home-github-commits-loading').html 'Please wait while the GitHub commits are loaded.'
 				$.each data, (key, value) ->
 					html_data =
@@ -43,17 +43,13 @@ displayLatestGitHubCommits = ->
 					return
 
 				return
-			else
-				$('span.home-github-commits-loading').html 'Sorry. The GitHub commits cannot be displayed.'
-
-				return
 		'commit_count': 5
 		'debug': 0
 		'exclude_repos': [
 			'twitter-bootstrap'
 		]
 		'repo_count': 3
-		#'user': 'jonathanmarvens'
+		'user': 'jonathanmarvens'
 	.run()
 
 	return

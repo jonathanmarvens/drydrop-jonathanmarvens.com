@@ -1,0 +1,77 @@
+{% extends 'partials/base.html' %}
+{% block head_title %}Home{% endblock %}
+{% block body_content %}
+<div class="row-fluid">
+	<div class="span3 zerofy-span-height">&nbsp;</div>
+	<div class="span6">
+		<br>
+		<div>
+			<br>
+			<h1><i class="icon-edit"></i> Latest blog posts</h1>
+			<hr>
+			<dl>
+				{% if dates|length > 0 %}
+					{% if dates|length > 5 %}
+						{% set dates = dates[:5] %}
+					{% endif %}
+					{% for article in dates %}
+					<dt>
+						<a href="{{ article.url }}">{{ article.title }}</a>
+					</dt>
+					<dd>
+						<small>
+							<i class="icon-pencil"></i>
+							<span class="boldify">On</span> {{ article.date|string|format_date_and_time('%b. %d, %Y') }}
+							<span class="boldify">at</span> {{ article.date|string|format_date_and_time('%I:%M %p') }}
+							<span class="boldify">by</span> <a href="{{ SITEURL }}/authors/{{ article.author }}.html">{{ article.author }}</a>
+							<span class="boldify">in</span> <a href="{{ SITEURL }}/categories/{{ article.category }}.html">{{ article.category }}</a>
+							<br>
+							{% if article.tags|length > 0 %}
+								<span class="boldify">Tagged with</span>
+								{% if article.tags|length == 1 %}
+									<a href="{{ SITEURL }}/tags/{{ article.tags[0] }}.html">{{ article.tags[0] }}</a>
+								{% elif article.tags|length == 2 %}
+									{% for article_tag in article.tags %}
+										<a href="{{ SITEURL }}/tags/{{ article_tag }}.html">{{ article_tag }}</a>
+										{% if loop.last == False %}
+											<span class="boldify">and</span>
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for article_tag in article.tags %}
+										{% if loop.last == False %}
+											<a href="{{ SITEURL }}/tags/{{ article_tag }}.html">{{ article_tag }}</a>,
+										{% else %}
+											<span class="boldify">and</span> <a href="{{ SITEURL }}/tags/{{ article_tag }}.html">{{ article_tag }}</a>
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% endif %}
+						</small>
+					</dd>
+					<hr>
+					{% endfor %}
+				{% else %}
+				<dt>
+					<span>Sorry. There are no blog posts to display.<span>
+				</dt>
+				{% endif %}
+			</dl>
+		</div>
+		<div>
+			<br>
+			<h1><i class="icon-github"></i> Latest GitHub commits</h1>
+			<hr>
+			<dl id="home-latest-github-commits">
+				<dt>
+					<span class="home-github-commits-loading">Sorry. The the GitHub commits cannot be displayed.<span>
+				</dt>
+			</dl>
+			<script src="{{ SITEURL }}/theme/resources/js-iso8601/iso8601.js"></script>
+			<script src="{{ SITEURL }}/theme/resources/moment/moment.js"></script>
+			<script src="{{ SITEURL }}/theme/resources/GitHub_LC-js/GitHub_LC-js.js"></script>
+		</div>
+	</div>
+	<div class="span3 zerofy-span-height">&nbsp;</div>
+</div>
+{% endblock %}

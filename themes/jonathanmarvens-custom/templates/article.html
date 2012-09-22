@@ -1,0 +1,66 @@
+{% extends 'partials/base.html' %}
+{% block head_title %}{{article.title}} - Blog{% endblock %}
+{% block body_content %}
+<div class="row-fluid">
+	<div class="span3 zerofy-span-height">&nbsp;</div>
+	<div class="span6">
+		<br>
+		<div>
+			<br>
+			<h1><i class="icon-edit"></i> Blog</h1>
+			<hr>
+			<h2>{{ article.title }}</h2>
+			<hr>
+			<small>
+				<i class="icon-pencil"></i>
+				<span class="boldify">On</span> {{ article.date|string|format_date_and_time('%b. %d, %Y') }}
+				<span class="boldify">at</span> {{ article.date|string|format_date_and_time('%I:%M %p') }}
+				<span class="boldify">by</span> <a href="{{ SITEURL }}/authors/{{ article.author }}.html">{{ article.author }}</a>
+				<span class="boldify">in</span> <a href="{{ SITEURL }}/categories/{{ article.category }}.html">{{ article.category }}</a>
+				<br>
+				{% if article.tags|length > 0 %}
+					<span class="boldify">Tagged with</span>
+					{% if article.tags|length == 1 %}
+						<a href="{{ SITEURL }}/tags/{{ article.tags[0] }}.html">{{ article.tags[0] }}</a>
+					{% elif article.tags|length == 2 %}
+						{% for article_tag in article.tags %}
+							<a href="{{ SITEURL }}/tags/{{ article_tag }}.html">{{ article_tag }}</a>
+							{% if loop.last == False %}
+								<span class="boldify">and</span>
+							{% endif %}
+						{% endfor %}
+					{% else %}
+						{% for article_tag in article.tags %}
+							{% if loop.last == False %}
+								<a href="{{ SITEURL }}/tags/{{ article_tag }}.html">{{ article_tag }}</a>,
+							{% else %}
+								<span class="boldify">and</span> <a href="{{ SITEURL }}/tags/{{ article_tag }}.html">{{ article_tag }}</a>
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+				{% endif %}
+			</small>
+			<hr>
+			<div id="article_content">{{ article.content }}</div>
+			{% if LIVEFYRE_SITE_ID %}
+			<div class="comments">
+				<hr>
+				<h3>Comments</h3>
+				<hr>
+				<script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+				<script type='text/javascript'>
+				var fyre = LF({
+					'article_id': '{{ article.slug }}',
+					'site_id': {{ LIVEFYRE_SITE_ID }},
+					'tags': '{% for article_tag in article.tags %}{{ article_tag }},{% endfor %}|end|'.replace(',|end|', ''),
+					'title': '{{ article.title }}',
+					'url': '{{ SITEURL }}/{{ article.url }}'
+				});
+				</script>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+	<div class="span3 zerofy-span-height">&nbsp;</div>
+</div>
+{% endblock %}

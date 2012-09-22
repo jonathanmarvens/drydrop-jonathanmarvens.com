@@ -5,7 +5,7 @@ displayLatestGitHubCommits = function() {
   var github_commits;
   github_commits = new $_GitHub_LC({
     'callback': function(data) {
-      if (data === !false) {
+      if (data !== false) {
         $('span.home-github-commits-loading').html('Please wait while the GitHub commits are loaded.');
         $.each(data, function(key, value) {
           var html_data;
@@ -24,14 +24,13 @@ displayLatestGitHubCommits = function() {
             $('dl#home-latest-github-commits').append(html_data);
           }
         });
-      } else {
-        $('span.home-github-commits-loading').html('Sorry. The GitHub commits cannot be displayed.');
       }
     },
     'commit_count': 5,
     'debug': 0,
     'exclude_repos': ['twitter-bootstrap'],
-    'repo_count': 3
+    'repo_count': 3,
+    'user': 'jonathanmarvens'
   }).run();
 };
 

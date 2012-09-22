@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	{% block head %}
+		<meta charset="UTF-8">
+
+		<title>{% block head_title %}{% endblock %} | {{ SITENAME }}</title>
+
+		<meta content="{{ EXTRA_SITE_AUTHOR }}" name="author">
+		<meta content="{{ EXTRA_SITE_DESCRIPTION }}" name="description">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+		<link href="{{ SITEURL }}/theme/favicon.ico" rel="icon">
+		<link
+			href="{{ SITEURL }}/theme/favicon.ico"
+			rel="shortcut"
+			type="image/x-icon"
+		>
+
+		<link href="{{ SITEURL }}/theme/resources/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="{{ SITEURL }}/theme/resources/fontawesome/css/font-awesome.css" rel="stylesheet">
+		<!--[if IE 7]>
+		<link href="{{ SITEURL }}/theme/resources/fontawesome/css/font-awesome-ie7.css" rel="stylesheet">
+		<![endif]-->
+		<link href="{{ SITEURL }}/theme/style/stylesheets/css/main.css" rel="stylesheet">
+
+		<!-- The HTML 5 shim for IE 6 - IE 8 support of HTML5 elements. -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-34923809-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+	{% endblock %}
+	</head>
+	<body>
+	{% block body %}
+		<br>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span4">&nbsp;</div>
+				<div class="span4" style="text-align: center;">
+					<img class="img-polaroid" src="{{ SITEURL }}/theme/style/images/jonathanmarvens.jpg">
+				</div>
+				<div class="span4 zerofy-span-height">&nbsp;</div>
+			</div>
+			<br>
+			<div class="row-fluid">
+				<div class="span4 zerofy-span-height">&nbsp;</div>
+				<div class="span4">
+					<blockquote>
+						<p>Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defence [defense] against complexity.</p>
+						<small>David Gelernter</small>
+					</blockquote>
+				</div>
+				<div class="span4 zerofy-span-height">&nbsp;</div>
+			</div>
+			<div class="row-fluid">
+				<span class="span3 zerofy-span-height">&nbsp;</span>
+				<div class="span6" style="min-height: 0 !important; text-align: center;">
+					<hr class="above-and-below-navigation-links">
+				</div>
+				<span class="span3 zerofy-span-height">&nbsp;</span>
+			</div>
+			<br>
+			<div class="row-fluid">
+				<span class="span4 zerofy-span-height"></span>
+				<div class="navigation-links span4" style="min-height: 0 !important;">
+					<a href="{{ SITEURL }}/index.html">
+						<i class="icon-home"></i>&nbsp;Home
+					</a>
+					<a href="{{ SITEURL }}/pages/about.html">
+						<i class="icon-user"></i>&nbsp;About
+					</a>
+					<a href="{{ SITEURL }}/pages/blog.html">
+						<i class="icon-book"></i>&nbsp;Blog
+					</a>
+					<!-- <a href="{{ SITEURL }}/pages/portfolio.html">
+						<i class="icon-folder-open"></i>&nbsp;Portfolio
+					</a> -->
+					<a href="{{ SITEURL }}/pages/contact.html">
+						<i class="icon-phone"></i>&nbsp;Contact
+					</a>
+				</div>
+				<span class="span4 zerofy-span-height"></span>
+			</div>
+			<br>
+			<div class="row-fluid">
+				<span class="span3 zerofy-span-height">&nbsp;</span>
+				<div class="span6" style="min-height: 0 !important; text-align: center;">
+					<hr class="above-and-below-navigation-links">
+				</div>
+				<span class="span3 zerofy-span-height">&nbsp;</span>
+			</div>
+			{% block body_content %}{% endblock %}
+			<div class="row-fluid">
+				<span class="span3 zerofy-span-height">&nbsp;</span>
+				<div class="span6">
+					<br>
+					<a
+						class="twitter-follow-button"
+						data-lang="en"
+						data-show-count="false"
+						data-show-screen-name="true"
+						data-size="medium"
+						href="https://twitter.com/jonathanmarvens"
+					>Follow me on Twitter (@jonathanmarvens)</a>
+					<script>
+					! function (d, s, id) {
+						var fjs = d.getElementsByTagName(s)[0];
+						var js;
+
+						if (! d.getElementById(id)) {
+							js		= d.createElement(s);
+							js.id	= id;
+							js.src	= '//platform.twitter.com/widgets.js';
+							fjs.parentNode.insertBefore(js, fjs);
+						}
+					}(document, 'script', 'twitter-wjs');
+					</script>
+				</div>
+				<span class="span3 zerofy-span-height">&nbsp;</span>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<footer id="footer">
+			{% block body_footer %}
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span3">&nbsp;</div>
+					<div class="span6">
+						<p>
+							<small>
+								<span class="boldify">Built by</span> <a href="{{ SITEURL }}">The One &amp; Only</a> <span class="boldify">with help from</span> <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a><span class="boldify">, and</span> <a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a><span class="boldify">.</span>
+							</small>
+							<br>
+							<small>
+								<span class="boldify">Copyright &copy; 2012</span> <a href="{{ SITEURL }}">Jonathan Marvens Barronville</a><span class="boldify">. All rights reserved.</span>
+							</small>
+						</p>
+					<div class="span3 zerofy-span-height">&nbsp;</div>
+				</div>
+			</div>
+			{% endblock %}
+		</footer>
+
+		<script src="{{ SITEURL }}/theme/resources/jquery/jquery.min.js"></script>
+		<script src="{{ SITEURL }}/theme/resources/twitter/bootstrap/js/bootstrap.min.js"></script>
+		<script src="{{ SITEURL }}/theme/scripts/js/script.js"></script>
+	{% endblock %}
+	</body>
+</html>
