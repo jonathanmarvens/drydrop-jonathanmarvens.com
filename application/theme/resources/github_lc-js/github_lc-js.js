@@ -94,7 +94,6 @@ $_GitHub_LC = (function() {
           for (_i = 0, _len = _ref.length; _i < _len; _i++) {
             exclude_repo = _ref[_i];
             $.each(user_github_repos, function(key, value) {
-              console.log(value);
               if (value !== void 0) {
                 if (value['name'] === exclude_repo) {
                   user_github_repos.splice(key, 1);
