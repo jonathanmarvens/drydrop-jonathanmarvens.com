@@ -89,13 +89,12 @@ $_GitHub_LC = (function() {
       $('body').on('ajax_github_api_repos_success', function(event, data) {
         var exclude_repo, _i, _len, _ref;
         user_github_repos = data['data'];
-        console.log('Repos:');
-        console.log(user_github_repos);
         if ($.isArray(_this.setup_options['exclude_repos'])) {
           _ref = _this.setup_options['exclude_repos'];
           for (_i = 0, _len = _ref.length; _i < _len; _i++) {
             exclude_repo = _ref[_i];
             $.each(user_github_repos, function(key, value) {
+              console.log(user_github_repos[key]);
               if (user_github_repos[key]['name'] === exclude_repo) {
                 user_github_repos.splice(key, 1);
               }

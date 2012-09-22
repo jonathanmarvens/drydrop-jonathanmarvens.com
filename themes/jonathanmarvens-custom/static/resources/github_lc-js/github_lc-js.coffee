@@ -74,12 +74,11 @@ class $_GitHub_LC
 			$('body').on 'ajax_github_api_repos_success', (event, data) =>
 				user_github_repos = data['data']
 
-				console.log 'Repos:'
-				console.log user_github_repos
-
 				if $.isArray @setup_options['exclude_repos']
 					for exclude_repo in @setup_options['exclude_repos']
 						$.each user_github_repos, (key, value) ->
+							console.log user_github_repos[key]
+
 							# if value['name'] is exclude_repo
 							if user_github_repos[key]['name'] is exclude_repo
 								user_github_repos.splice key, 1
