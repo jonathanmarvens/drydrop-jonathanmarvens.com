@@ -77,11 +77,11 @@ class $_GitHub_LC
 				if $.isArray @setup_options['exclude_repos']
 					for exclude_repo in @setup_options['exclude_repos']
 						$.each user_github_repos, (key, value) ->
-							console.log user_github_repos[key]
+							console.log value
 
-							# if value['name'] is exclude_repo
-							if user_github_repos[key]['name'] is exclude_repo
-								user_github_repos.splice key, 1
+							if value isnt undefined
+								if value['name'] is exclude_repo
+									user_github_repos.splice key, 1
 
 							return
 
