@@ -49,7 +49,7 @@ class NonCachingFileHandler < WEBrick::HTTPServlet::FileHandler
 end
 
 WEBrick::HTTPServer.new(Port: ARGV.first || 8000).tap do |server|
-	server.mount "/", NonCachingFileHandler , Dir.pwd + '/application'
+	server.mount "/", NonCachingFileHandler , Dir.pwd
 	trap("INT") { server.stop }
 	server.start
 end
